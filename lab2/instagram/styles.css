@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #fafafa;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 350px;
+    background: #ffffff;
+    border: 1px solid #dbdbdb;
+    padding: 40px;
+    text-align: center;
+}
+
+.insta-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.insta-icon i {
+    font-size: 42px;
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285AEB 90%
+    );
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+-webkit-text-fill-color: transparent;
+}
+
+.logo {
+    font-family: cursive;
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #262626;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 6px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background: #0095f6;
+    color: white;
+    border: none;
+    margin: 10px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #dbdbdb;
+}
+
+.divider p {
+    margin: 0 10px;
+    font-size: 12px;
+    color: #8e8e8e;
+}
+
+.fb-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.fb-login i {
+    color: #385185;
+}
+
+.fb-login a {
+    color: #385185;
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forgot {
+    display: block;
+    margin-top: 15px;
+    font-size: 12px;
+    color: #00376b;
+    text-decoration: none;
+}
