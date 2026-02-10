@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Object Tasks</title>
+</head>
+<body>
+  <h1>Check the console for results</h1>
+
+  <script>
+    let user = {};
+    user.name = "John";
+    user.surname = "Smith";
+    user.name = "Pete";
+    delete user.name;
+    console.log(user);
+
+    function isEmpty(obj) {
+      for (let key in obj) return false;
+      return true;
+    }
+
+    let schedule = {};
+    console.log(isEmpty(schedule));
+    schedule["8:30"] = "get up";
+    console.log(isEmpty(schedule));
+
+    let salaries = {
+      John: 100,
+      Ann: 160,
+      Pete: 130
+    };
+
+    let sum = 0;
+    for (let person in salaries) sum += salaries[person];
+    console.log(sum);
+
+    function multiplyNumeric(obj) {
+      for (let key in obj) {
+        if (typeof obj[key] === "number") obj[key] *= 2;
+      }
+    }
+
+    let menu = {
+      width: 200,
+      height: 300,
+      title: "My menu"
+    };
+
+    multiplyNumeric(menu);
+    console.log(menu);
+  </script>
+</body>
+</html>
