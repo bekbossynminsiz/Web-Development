@@ -1,0 +1,21 @@
+<div class="card">
+
+  <h3>{{ product().name }}</h3>
+
+  <p class="description">
+    {{ product().description }}
+  </p>
+
+  <div class="price">₸ {{ product().price }}</div>
+
+  <div class="rating">⭐ {{ product().rating }}</div>
+
+  <div class="likes">❤ {{ product().likes }}</div>
+
+  <div class="buttons">
+    <button class="like-btn" (click)="like()">Like</button>
+    <button class="delete-btn" (click)="remove()">Delete</button>
+    <button class="share-btn" (click)="share()">Share</button>
+  </div>
+
+</div>
